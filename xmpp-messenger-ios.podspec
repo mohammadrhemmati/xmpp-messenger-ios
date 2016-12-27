@@ -8,7 +8,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "xmpp-messenger-ios"
+  s.name             = "mohammadrhemmati-xmpp-messenger-ios"
   s.version          = "1.0.1"
   s.summary          = "A Swift Wrapper Arround XMPP to build chat clients"
   s.description      = <<-DESC
