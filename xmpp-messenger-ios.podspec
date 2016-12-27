@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
                        xmpp-messenger-ios is a Swift XMPP Wrapper to quickly build xmpp chat clients.
 						It include third party package like JSQMessageViewController to provide UI and sound for the messaging, while the XMPPFramework handle communication
                        DESC
-  s.homepage         = "https://github.com/processone/xmpp-messenger-ios"
+  s.homepage         = "https://github.com/mohammadrhemmati/xmpp-messenger-ios"
   s.license          = 'MIT'
-  s.author           = { "ProcessOne" => "pmglemaire@gmail.com" }
-  s.source           = { :git => "https://github.com/processone/xmpp-messenger-ios.git"}
+  s.author           = { "ProcessOne" => "mohammadrhemmati@gmail.com" }
+  s.source           = { :git => "https://github.com/mohammadrhemmati/xmpp-messenger-ios.git"}
 
 s.platform = :ios, '8.0'
 s.ios.deployment_target = '8.0'
@@ -27,7 +27,7 @@ s.requires_arc = true
 s.dependency 'FMDB'
 s.dependency 'JSQMessagesViewController'
 s.dependency 'JSQSystemSoundPlayer', '~> 2.0'
-s.dependency 'XMPPFramework'
+s.dependency 'XMPPFramework', :git => "https://github.com/robbiehanson/XMPPFramework.git", :branch => 'master'
 
 s.ios.frameworks = 'Foundation', 'CoreData', 'UIKit', 'CFNetwork', 'Security', 'XMPPFramework'
 s.source_files = ['Pod/Classes/**/*.{swift}']
